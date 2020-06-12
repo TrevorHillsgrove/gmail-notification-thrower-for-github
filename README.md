@@ -19,3 +19,5 @@ Make sure that all Github emails you are receiving auto-add a custom tag you've 
 If you want, you can also install this in your crontab with crontab -e
 My crontab (only runs on workdays from 8 am to 5:59 pm, at 5 minute intervals)
 `0,5,10,15,20,25,30,35,40,45,50,55 8-17 * * 1-5  cd scriptPath && /usr/bin/python scriptPath/emailNotification.py`
+
+Note: If you are having issues with cron accessing Python, you may need to give cron full-disk access: https://blog.bejarano.io/fixing-cron-jobs-in-mojave/
